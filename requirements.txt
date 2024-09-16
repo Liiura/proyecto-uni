@@ -1,3 +1,4 @@
+altgraph==0.17.4
 certifi==2024.7.4
 cffi==1.15.1
 charset-normalizer==3.3.2
@@ -8,14 +9,18 @@ Flask==2.2.5
 idna==3.7
 importlib-metadata==6.7.0
 itsdangerous==2.1.2
-jinja2==3.1.4
+Jinja2==3.1.4
 MarkupSafe==2.1.5
 mysql-connector-python==8.0.33
+packaging==24.1
 paho-mqtt==2.1.0
 protobuf==3.20.3
 pycparser==2.21
+pyinstaller==6.10.0
+pyinstaller-hooks-contrib==2024.8
 requests==2.31.0
-typing-extensions==4.7.1
+setuptools==75.1.0
+typing_extensions==4.7.1
 urllib3==2.0.7
 Werkzeug==2.2.3
 zipp==3.15.0

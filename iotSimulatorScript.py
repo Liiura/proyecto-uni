@@ -24,10 +24,11 @@ def send_temperature(temperature):
     else:
         print(f"Error al enviar temperatura: {response.status_code}, {response.json()}")
 
+running = True  # Inicializamos la variable 'running'
+
 def main():
     global running
     client = mqtt.Client()
-    client.on_connect = on_connect
     if(connectionMode != "API"):
         if(connectionMode == "MQTT_SSL"):
             client.tls_set(ca_certs="/etc/mosquitto/certs/mosquitto.crt",
@@ -53,6 +54,5 @@ def main():
     finally:
         client.loop_stop()
         client.disconnect()
-
 if __name__ == "__main__":
     main()
